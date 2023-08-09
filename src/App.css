@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  background-color: aliceblue;
+}
+
+.navbar-nav li:hover {
+  font-weight: 600;
+}
+
+.card{
+  border-radius: 16px;
+}
+
+.card img{
+  height: 250px;
+  border-radius: 16px;
+}
+
+.card-desc,
+.card-title{
+  height: 72px;
+}
+
+.card-text{
+  height: 48px;
+}
