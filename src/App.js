@@ -1,29 +1,15 @@
 import './App.css';
-import React, { useEffect, useState } from 'react'
+import React,  useState  from 'react'
 import NavBar from './components/NavBar';
 import News from './components/News';
 import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar'
-import alanBtn from "@alan-ai/alan-sdk-web";
 
 
 const App = () => {
 
 
   const [progress, setProgress] = useState(0)
-  const alanKey = 'c78682b5b526bdb29a43c2b1394f46362e956eca572e1d8b807a3e2338fdd0dc/stage'
-
-  useEffect(() => {
-    alanBtn({
-      key: alanKey,
-      onCommand: ({command,articles}) => {
-        if (command === 'newHeadlines') {
-          // Call the client code that will react to the received command
-          console.log(articles)
-        }
-      }
-    });
-  }, []);
 
   return (
     <div>
